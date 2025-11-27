@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0b0b;
+}
+
+.slow{
+  animation: bounce-slow 3s ease-in-out infinite
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.scrollbar1::-webkit-scrollbar {
+  height: 12px;
+}
+
+.scrollbar1::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);    
+  border-radius: 4px;
+
+}
+
+.scrollbar1::-webkit-scrollbar-thumb {
+  background: #e50914;          
+  border-radius: 4px;
+}
+
+.scrollbar1::-webkit-scrollbar-thumb:active {
+  background: #e0e0e0;          
+}
+
+@keyframes dynamic-glow {
+  0% {
+    box-shadow: 0 0 15px rgba(255,193,7,0.5), 0 0 30px rgba(229,9,20,0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0,255,255,0.5), 0 0 40px rgba(255,193,7,0.3);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255,193,7,0.5), 0 0 30px rgba(229,9,20,0.3);
+  }
+}
+
+.animate-dynamic-glow {
+  animation: dynamic-glow 3s ease-in-out infinite;
+}
+
+
+/* primary: '#E50914',
+secondary: '#FFC107',
+accent: '#00FFFF',
+background: '#0B0B0B',
+text: '#E0E0E0', */
