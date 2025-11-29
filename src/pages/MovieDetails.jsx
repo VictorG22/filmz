@@ -47,14 +47,14 @@ const MovieDetails = () => {
       >
         <div className="absolute z-10 inset-0 bg-linear-to-b from-[#0b0b0b] via-transparent to-[#0b0b0b]" />
         <div className="z-40 h-full flex max-w-[1600px] py-6 px-4">
-          <div className=" flex items-end gap-2 text-[#e0e0e0]">
+          <div className=" flex max-md:flex-col max-md:justify-center max-md:items-center items-end gap-2 text-[#e0e0e0]">
             <img
-              className="w-[250px] border-2 border-black  rounded-md shadow-lg shadow-gray"
+              className="max-md:w-[200px] w-[250px] border-2 border-black  rounded-md shadow-lg shadow-gray"
               src={`https://image.tmdb.org/t/p/original${media.poster_path}`}
             />
 
             <div className="mx-auto scrollbar1 max-w-[800px] flex flex-col bg-[rgba(0,0,0,0.3)] gap-y-4 p-4 rounded-lg">
-              <h1 className="text-6xl font-bold break">
+              <h1 className="max-md:text-2xl text-6xl font-bold break">
                 {media.title || media.name}
               </h1>
               <h2 className="text-xl font-semibold">

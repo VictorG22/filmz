@@ -25,7 +25,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-[0_0_10px_rgba(139,92,246,0.7)] mb-4">
             Welcome to Filmz{" "}
           </h1>
-          <h2 className="text-xl md:text-3xl text-gray-300 drop-shadow-md uppercase mb-20">
+          <h2 className="text-xl max-md:max-w-[400px] md:text-3xl text-gray-300 drop-shadow-md uppercase mb-20">
             the biggest and up-to-date media library in the united states!!{" "}
           </h2>
           <form onSubmit={handleSubmit} className="w-full max-w-xl relative">
@@ -42,7 +42,7 @@ const Hero = () => {
         <img
           src={HeroImg}
           alt=""
-          className=" slow rounded-md shadow-[0_4px_15px_rgba(139,92,246,0.5)]"
+          className=" slow rounded-md shadow-[0_4px_15px_rgba(139,92,246,0.5)] w-[70%]"
         />
       </div>
     </section>

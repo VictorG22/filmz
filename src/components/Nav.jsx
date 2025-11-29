@@ -52,6 +52,7 @@ const Nav = () => {
                 <ul className="z-50 text-[#E0E0E0]  flex flex-col text-center text-2xl gap-y-15">
                   {navLinks.map((item) => (
                     <Link
+                    onClick={() => setIsOpen((prev) => !prev)}
                       className={` ${item.pointer}`}
                       to={item.link}
                       key={item.label}

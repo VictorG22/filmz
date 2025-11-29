@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <section
       id="footer"
-      className="flex flex-col items-center my-5 mx-2 rounded-lg "
+      className="flex flex-col items-center my-6 mx-2 rounded-lg "
     >
-      <div className="max-w-[1200px] w-full flex flex-col justify-center bg-gray-950 p-8 rounded-md animate-dynamic-glow">
+      <div className="max-w-[1200px] w-full flex flex-col justify-center bg-gray-950 mb-8 p-8 rounded-md animate-dynamic-glow">
         <div className="w-full grid grid-cols-2 md:grid-cols-4 justify-between text-white gap-8 my-4">
           {Object.entries(footerLinks).map(([section, links]) => (
             <div key={section}>

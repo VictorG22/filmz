@@ -72,7 +72,7 @@ const RandomMedia = () => {
               key={media.id}
               onMouseEnter={() => setHoveredId(media.id)}
               onMouseLeave={() => setHoveredId(null)}
-              className={`p-2 flex flex-col items-center justify-between w-full sm:w-[220px] rounded-md overflow-hidden bg-linear-to-tr from-gray-950 via-gray-800 to-gray-950 shadow-lg hover:scale-102 transition duration-300 
+              className={`p-2 flex flex-col items-center justify-between w-full md:w-[220px] rounded-md overflow-hidden bg-linear-to-tr from-gray-950 via-gray-800 to-gray-950 shadow-lg hover:scale-102 transition duration-300 
                 ${
                     !isHovered
                     ? "opacity-100 scale-100" // no card hovered yet → full opacity
